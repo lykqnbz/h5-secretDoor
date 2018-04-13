@@ -48,7 +48,7 @@ canvas{
 	background-repeat: no-repeat;
 }
 
-#valentines_text, #rewind_text, #replay_text{
+#valentines_text{
 	display: none;
 	position: absolute;
 	bottom:0;
@@ -58,7 +58,6 @@ canvas{
 	font-size: 30px;
 	text-align: center;
 	letter-spacing: 0px;
-
 	-webkit-transition: letter-spacing 5s ease-out;
 	-moz-transition: letter-spacing 5s ease-out;
 	-ms-transition: letter-spacing 5s ease-out;
@@ -67,7 +66,16 @@ canvas{
 }
 #rewind_text, #replay_text{
 	color: #ccc;
-	letter-spacing: 2px;
+	letter-spacing: 2px;	
+	display: none;
+	position: absolute;
+	bottom:-8%;
+	width:100%;
+	height:50px;
+	color:#666;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 0px;
 	/*text-align: left;*/
 }
 #end_container{
@@ -236,7 +244,13 @@ input#your_link{
 	transform: translateX(-50%);
 	width: 15%;
 }
-
+.NewShare{
+	position: absolute;
+	right: 5%;
+	top: 3%;
+	height: 130px;
+	width: 101px;
+}
 .NewSaying{
 	position: absolute;
 	font-size: 45px;
@@ -281,6 +295,14 @@ input#your_link{
 	color: #fff;
 	font-size: 34px;
 }
+#NewButMore>img{
+	width:5%;
+	margin-right: 15px;
+}
+#NewButFirend>img,#NewButAgain>img{
+	width: 12%;
+	margin-right: 15px;
+}
 #NewButFirend,#NewButAgain{
 	width: 40%;
 	height: 100px;
@@ -290,6 +312,9 @@ input#your_link{
 	border: 2px solid #fff;
 	border-radius: 10px;
 	margin-bottom: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 #NewButMore{
 	width: 100%;
@@ -301,6 +326,9 @@ input#your_link{
 	background: #000;
 	box-sizing: border-box;
 	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 #boddy{
 	width: 100%;

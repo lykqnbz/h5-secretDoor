@@ -768,7 +768,7 @@ function iHeartYou() {
 		// vtext.textContent = encryptString(decodeURIComponent(window.location.hash).substring(1));
 		vtext.textContent = decodeURIComponent(window.location.hash.substring(1));
 	} else {
-		vtext.textContent = "这是一条来自于我的消息 :D";
+		vtext.textContent = "未定制内容";
 	}
 
 	setTimeout(function () {
@@ -903,6 +903,9 @@ document.getElementById("NewButMore").onclick = function () {
 }
 
 document.getElementById("NewButFirend").onclick = function () {
+	wx.miniProgram.navigateTo({ url: '/pages/share/share' })
+}
+document.getElementById("NewButFirend1").onclick = function () {
 	wx.miniProgram.navigateTo({ url: '/pages/share/share' })
 }
 ///////////////////////////////////////////////////////////////////
