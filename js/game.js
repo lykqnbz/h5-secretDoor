@@ -709,7 +709,7 @@ function next() {
 		}, 1500);
 		document.getElementById("boddy").style.width = '0px';
 		document.getElementById("boddy").style.height = '0px';
-		document.getElementById("boddy").style.display = 'none';
+		// document.getElementById("boddy").style.display = 'none';
 		document.getElementsByClassName("back")[0].style.display = 'none';
 		document.getElementsByClassName("front")[0].style.display = 'none';
 	}
