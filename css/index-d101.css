@@ -250,6 +250,7 @@ input#your_link{
 	top: 3%;
 	height: 130px;
 	width: 101px;
+	z-index: 99;
 }
 .NewSaying{
 	position: absolute;
