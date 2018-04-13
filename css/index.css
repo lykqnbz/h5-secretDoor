@@ -259,7 +259,7 @@ input#your_link{
 	transform: translateX(-50%);
 	top: 20%;
 	opacity: 0;
-	width: 65%;
+	width: 100%;
 }
 
 .active{
