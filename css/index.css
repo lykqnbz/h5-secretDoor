@@ -259,6 +259,7 @@ input#your_link{
 	transform: translateX(-50%);
 	top: 20%;
 	opacity: 0;
+	width: 65%;
 }
 
 .active{
@@ -279,7 +280,7 @@ input#your_link{
 	box-sizing: border-box;
 	position: absolute;
 	left: 7.5%;
-	bottom: 10%;
+	bottom: 9%;
 	display: none;
 }
 #NewInput{
@@ -295,18 +296,18 @@ input#your_link{
 	color: #fff;
 	font-size: 34px;
 }
-#NewButMore>img{
+#NewButAgain>img{
 	width:5%;
 	margin-right: 15px;
 }
-#NewButFirend>img,#NewButAgain>img{
+#NewButFirend>img,#NewButMore>img{
 	width: 12%;
 	margin-right: 15px;
 }
-#NewButFirend,#NewButAgain{
+#NewButFirend,#NewButMore{
 	width: 40%;
-	height: 100px;
-	line-height: 100px;
+	height: 116px;
+	line-height: 116px;
 	text-align: center;
 	box-sizing: border-box;
 	border: 2px solid #fff;
@@ -316,12 +317,12 @@ input#your_link{
 	align-items: center;
 	justify-content: center;
 }
-#NewButMore{
+#NewButAgain{
 	width: 100%;
 	border: 2px solid #fff;
 	border-radius: 10px;
-	height: 100px;
-	line-height: 100px;
+	height: 116px;
+	line-height: 116px;
 	text-align: center;
 	background: #000;
 	box-sizing: border-box;
@@ -329,6 +330,7 @@ input#your_link{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 40px;
 }
 #boddy{
 	width: 100%;

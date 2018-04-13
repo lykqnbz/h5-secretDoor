@@ -751,7 +751,7 @@ function iHeartYou() {
 
 	setTimeout(function () {
 		document.getElementById("NewButZ").style.display = 'flex'
-	}, 5000);
+	}, 2000);
 
 	for (var i = 0; i < levelObjects.length; i++) {
 		levelObjects[i].onlyPath();
