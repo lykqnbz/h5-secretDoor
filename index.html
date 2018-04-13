@@ -155,7 +155,7 @@
 
 
 	var joystickL = nipplejs.create({
-		zone: document.getElementById('boddy'),
+		zone: document.getElementById('whole_container'),
 		mode: 'static',
 		position: { left: '50%', bottom: '25%' },
 		color: 'gray',
@@ -169,15 +169,11 @@
 			Key['left'] = false;Key['right'] = false;Key['up'] = false;Key['down'] = false;if (window.STAGE == 4) return;
 		}
 	}).on('move',function(e,data){
-		// console.log(e)
-		// console.log(data)
 		if(data.direction!=undefined){
 			let angle =data.direction.angle;
 			let distance =data.distance;
 			let aoe=data.angle.degree;
-				console.log(aoe)
 				if(aoe>337.5||aoe<22.5){
-					// 
 					Key['left'] = false;Key['right'] = true;Key['up'] = false;Key['down'] = false;if (window.STAGE == 4) return;
 				}
 				else if(22.5<aoe&&aoe<67.5){
@@ -201,22 +197,7 @@
 				}
 				else{
 					Key['left'] = false;Key['right'] = true;Key['up'] = false;Key['down'] = true;if (window.STAGE == 4) return;
-				}
-			
-				// switch(angle){
-				// 	case 'left': 
-				// 	// console.log(angle);break;			
-				// 	var code = KEY_CODES[37];Key[code] = true;Key['right'] = false;Key['up'] = false;Key['down'] = false;if (window.STAGE == 4) return;break;
-				// 	case 'right':
-				// 	// console.log(angle);break;
-				// 	var code = KEY_CODES[39];Key[code] = true;Key['left'] = false;Key['up'] = false;Key['down'] = false;if (window.STAGE == 4) return;break;
-				// 	case 'up': 
-				// 	// console.log(angle);break;			
-				// 	var code = KEY_CODES[38];Key[code] = true;Key['right'] = false;Key['left'] = false;Key['down'] = false;if (window.STAGE == 4) return;break;
-				// 	case 'down':
-				// 	// console.log(angle);break;
-				// 	var code = KEY_CODES[40];Key[code] = true;Key['right'] = false;Key['up'] = false;Key['left'] = false;if (window.STAGE == 4) return;break;
-				// }	
+				}	
 		}
 	})
 

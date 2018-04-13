@@ -697,7 +697,16 @@ function next() {
 	if (CURRENT_LEVEL == 1) { document.getElementsByClassName("NewSaying")[0].className = 'NewSaying active1'; setTimeout(function () { document.getElementsByClassName("NewSaying")[1].className = 'NewSaying active' }, 1500); }
 	if (CURRENT_LEVEL == 2) { document.getElementsByClassName("NewSaying")[1].className = 'NewSaying active1'; setTimeout(function () { document.getElementsByClassName("NewSaying")[2].className = 'NewSaying active' }, 1500); }
 	if (CURRENT_LEVEL == 3) {
-		document.getElementsByClassName("NewSaying")[2].className = 'NewSaying active1'; setTimeout(function () { document.getElementsByClassName("NewSaying")[3].className = 'NewSaying active' }, 1500);
+		document.getElementsByClassName("NewSaying")[2].className = 'NewSaying active1';
+		setTimeout(function () {
+			document.getElementsByClassName("NewSaying")[3].className = 'NewSaying active'
+			setTimeout(function () {
+				document.getElementsByClassName("NewSaying")[3].className = 'NewSaying active1';
+				setTimeout(function () {
+					document.getElementsByClassName("NewSaying")[4].className = 'NewSaying active'
+				}, 1500)
+			}, 5000)
+		}, 1500);
 		document.getElementById("boddy").style.width = '0px';
 		document.getElementById("boddy").style.height = '0px';
 		document.getElementsByClassName("back")[0].style.display = 'none';
@@ -739,7 +748,6 @@ function next() {
 
 function iHeartYou() {
 
-	document.getElementsByClassName("NewSaying")[3].className = 'NewSaying active1'; setTimeout(function () { document.getElementsByClassName("NewSaying")[4].className = 'NewSaying active' }, 1500)
 	setTimeout(function () {
 		document.getElementById("NewButZ").style.display = 'flex'
 	}, 5000);
@@ -757,7 +765,7 @@ function iHeartYou() {
 	vtext.style.display = "block";
 	if (window.location.hash) {
 		// vtext.textContent = encryptString(decodeURIComponent(window.location.hash).substring(1));
-		vtext.textContent=decodeURIComponent(window.location.hash.substring(1));
+		vtext.textContent = decodeURIComponent(window.location.hash.substring(1));
 	} else {
 		vtext.textContent = "这是一条来自于我的消息 :D";
 	}
@@ -962,8 +970,8 @@ window.LEVEL_CONFIG = [
 	}
 
 ];
-document.getElementById("Newfirst").onclick = function () {
-	document.getElementById("Newfirst").style.display='none'
+// document.getElementById("Newfirst").onclick = function () {
+	// document.getElementById("Newfirst").style.display='none'
 	// document.getElementById("whole_container").style.top = "-100%";
 	// document.getElementsByClassName("NewSaying")[0].className = 'NewSaying active';
 	// createjs.Sound.play("ding");
@@ -977,4 +985,4 @@ document.getElementById("Newfirst").onclick = function () {
 	// }, 1200);
 
 	// return "END_LEVEL";
-}
+// }
